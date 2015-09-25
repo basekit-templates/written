@@ -34,6 +34,9 @@
             color: @color-swatch4;
             background-color: transparent;
         }
+        .label {
+            color: @color-swatch5;
+        }
         .form-body {
             padding: 0;
         }
@@ -246,7 +249,14 @@
         display: none;
         padding: 10px 0;
     }
+    .label {
+        color: @color-swatch5;
+    }
     // Search Form
+    .select,
+    .input {
+        border: 1px solid darken(@color-swatch7, 20%);
+    }
     .input--search {
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
@@ -481,6 +491,10 @@
 // Quantity Field
 
 .quantity-wrap {
+    .quantity-field {
+        padding: 10px 0;
+        height: 44px;
+    }
     .button--quantity {
         margin: 0;
         line-height: 0;
@@ -539,6 +553,7 @@
     th,
     td {
         border: none;
+        background-color: transparent;
     }
     .table-row {
         border: 1px solid darken(@color-swatch1, 8%);

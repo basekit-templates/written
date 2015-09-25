@@ -6,8 +6,12 @@ button,
 .button {
     min-height: 44px;
     padding: 8px 20px;
-    .transition( all, 0.5s, ease );
+    background-color: @font-swatch7-background-color;
     .border-radius(3px);
+    &:hover {
+        background-color: @font-swatch7-background-color-hover;
+        .transition(@duration:0.2s, @ease:ease-in-out);
+    }
     @media @mobile {
         width: 100%;
         text-align: center;

@@ -43,6 +43,7 @@
             -webkit-filter: grayscale(0%);
             .image-link {
                 opacity: 1;
+                .transition(@duration:0.7s, @ease:ease-in-out);
             }
         }
     }
@@ -59,16 +60,6 @@
             overflow: hidden;
             background-size: cover;
             background-position: 50% 50%;
-            // &:after {
-            //     content: "";
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     height: 100%;
-            //     width: 100%;
-            //     transition: all 0.8s;
-            //     opacity: 1;
-            // }
             .image {
                 display: none;
             }
@@ -120,6 +111,7 @@
             color: @color-swatch4;
             text-decoration: none;
             background-color: @color-swatch7;
+            .transition(@duration:0.5s, @ease:ease-in-out);
         }
     }
 }

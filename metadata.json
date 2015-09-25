@@ -3,7 +3,7 @@
     "thumbnail": "thumbnail.png",
     "screenshot": "written-screenshot.jpg",
     "widgetVersion":2,
-    "pageTypes": ["home"],
+    "pageTypes": ["home", "blogpost"],
     "templateType":"blog",
     "tags": {
         "en": ["blog", "photography", "design", "portfolio", "gallery", "camera", "images", "technology", "creative", "media"],

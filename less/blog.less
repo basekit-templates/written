@@ -2,7 +2,6 @@
 // Blog Posts List
 // -----------------------------------
 
-
 .blogpostlist {
     padding-top: 20px;
     .post-article {
@@ -150,7 +149,12 @@
 // Single Blog Post: Full Width Widget
 // -----------------------------------
 
+.blogpost-page .container {
+    padding-top: 0;
+}
+
 .container {
+    div#page-zones__template-widgets__blogpost-singleblogpost,
     div#page-zones__main-widgets__blogpost,
     div#page-zones__main-widgets__blogpostWidget {
         width: 100% !important;
@@ -159,12 +163,31 @@
 }
 
 .blogpost {
-    .post-image .image {
-        position: absolute;
-        width: 100%;
-        height: auto;
-        max-height: inherit;
-        z-index: -1;
+    .post-image {
+        background-position: inherit;
+        .image-link {
+            height: 500px;
+            background-position: inherit;
+            background-size: cover;
+            background-position: center;
+            @media only screen and (max-width: 1400px) {
+                height: 450px;
+            }
+            @media only screen and (max-width: 1140px) {
+                height: 400px;
+            }
+            @media only screen and (max-width: 900px) {
+                height: 350px;
+            }
+            @media @mobile {
+                height: 200px;
+                width: 90%;
+                margin: 20px 5% 0;
+            }
+        }
+        .image {
+            display: none;
+        }
     }
 
     .post-content,
@@ -189,18 +212,18 @@
     }
 
     .post-article--has-image .post-content {
-        margin-top: 300px;
+        margin-top: -300px;
         @media only screen and (max-width: 1400px) {
-            margin-top: 250px;
+            margin-top: -250px;
         }
         @media only screen and (max-width: 1140px) {
-            margin-top: 200px;
+            margin-top: -200px;
         }
         @media only screen and (max-width: 900px) {
-            margin-top: 150px;
+            margin-top: -150px;
         }
         @media @mobile {
-            margin-top: 100px;
+            margin-top: 0;
         }
     }
 

@@ -1,0 +1,13 @@
+<!-- Header include -->
+<header class="template-header">
+    {{widget('extendednavigation', 'navigation', {"align":"left"})|raw}}
+    <div class="brand">
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo-default.png')})|raw}}
+        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+    </div>
+    <div class="header-blog-search">
+        <div class="header-search-icon">icon</div>
+        {{widget('blogsearch', 'blogsearch', {})|raw}}
+    </div>
+</header>
+

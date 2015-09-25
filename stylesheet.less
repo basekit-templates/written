@@ -1,0 +1,393 @@
+// ---------------------
+// Balkan:  Main Styles
+// ---------------------
+
+// -----------------------------
+// 1. LESS Includes
+// -----------------------------
+
+
+@import "@{templateCommon}/bk-less-framework.less";             // BK LESS Framework
+
+@import "@{templateLocal}/less/variables-mixins.less";          // Variables
+
+@import "@{templateLocal}/less/widgets/widget-navigation.less"; // Widgets > Navigation
+
+@import "@{templateLocal}/less/header-style.less";
+@import "@{templateLocal}/less/feature.less";
+@import "@{templateLocal}/less/ecom.less";
+@import "@{templateLocal}/less/blog.less";
+@import "@{templateLocal}/less/forms.less";
+@import "@{templateLocal}/less/buttons.less";
+@import "@{templateLocal}/less/slideshow.less";
+@import "@{templateLocal}/less/gallery.less";
+
+
+// -----------------------------
+// 2. Media Queries
+// -----------------------------
+
+@bp-tablet: ~"only screen and (max-width: 800px)";
+@bp-mobile: ~"only screen and (max-width: 600px)";
+
+
+
+
+// -----------------------------
+// 3. Typography
+// -----------------------------
+
+    // Anchor links
+    a {
+        color: @color-swatch3;
+    }
+
+
+
+// -----------------------------
+// 3. Global Styles
+// -----------------------------
+
+
+body {
+    background-color: @color-swatch1;
+}
+
+
+
+
+// -----------------------------
+// Widgets
+// -----------------------------
+
+.container .widget,
+.template-footer {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @media only screen and (min-width: 1140px) {
+        width: 960px; // 1140px - 10% for margins
+        margin: 10px auto;
+    }
+}
+
+// Widgets in Responsive Columns
+.container {
+    // Two Columns
+    .columns-two-left,
+    .columns-two-right,
+    // Three Columns
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right,
+    // Four Columns
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+        .widget {
+            width: auto;
+            margin: 10px 0;
+            @media only screen and (min-width: 1140px) {
+                width: auto;
+                margin: 10px auto;
+            }
+        }
+    }
+}
+
+
+// Stops mobile scrolling of the body - only the nav is scrollable
+.noscroll {
+    overflow: hidden;
+}
+
+
+
+
+// -----------------------------
+// Sticky Footer
+// -----------------------------
+
+.default-page {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.default-page .container {
+    flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-top: 50px;
+    @media @tablet {
+        padding-top: 40px;
+    }
+    @media @mobile {
+        padding-top: 20px;
+    }
+}
+
+.template-footer {
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+
+// -----------------------------
+// Social Icons
+// -----------------------------
+
+.social-item {
+    margin-right: 3px;
+    text-align: center;
+    background-color: transparent;
+    &:hover {
+        background-color: transparent;
+    }
+    .social-link {
+        display: inline-block;
+        width: 31px;
+        height: 31px;
+        padding: 5px 8px 6px;
+        color: @color-swatch5;
+        border: 2px solid @color-swatch5;
+        &:before {
+            margin-right: 0;
+            font-size: 14px;
+        }
+        &:hover {
+            text-decoration: none;
+            .transition(@duration:0.7s, @ease:ease-in-out);
+            transform: rotateY(360deg);
+        }
+    }
+    .social-name {
+        display: none;
+    }
+}
+
+
+
+
+// -----------------------------
+// Twitter Widget
+// -----------------------------
+
+.twitter .tweet-item {
+    position: relative;
+    margin-left: 10px;
+    padding: 20px 20px 20px 0;
+    background-color: @color-swatch7;
+    p {
+        padding-bottom: 0;
+    }
+    .tweet-wrap {
+        margin: 0 50px;
+    }
+    .avatar {
+        position: absolute;
+        top: 20px;
+        left: -10px;
+    }
+    .avatar-link {
+        max-width: 48px;
+    }
+    .avatar,
+    .tweet-wrap {
+        display: inline-block;
+        vertical-align: top;
+        @media @mobile {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .account-link {
+        font-family: @font-swatch3-font-family;
+        color: @color-swatch3;
+        font-size: @font-swatch5-font-size;
+        font-weight: @font-swatch5-font-weight;
+        line-height: @font-swatch5-line-height;
+    }
+    .tweet-metadata {
+        font-size: 90%;
+        .timestamp, .via {
+            color: lighten(@color-swatch5, 15%)
+        }
+    }
+    .timestamp {
+        margin-right: 5px;
+    }
+}
+
+.avatar-link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 10px;
+    height: 10px;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #333333 transparent transparent;
+}
+
+
+
+
+// --------------------
+// Commas after tags
+// --------------------
+
+.tag-link {
+    white-space: nowrap;
+}
+
+.tag-link:after {
+    content: "\002C";
+}
+.tag-item:last-child .tag-link:after {
+    content: "";
+}
+
+
+
+
+// -----------------------------
+// Yelp
+// -----------------------------
+
+
+.yelpreview ul {
+    list-style: none;
+    margin: 16px 0;
+}
+
+
+
+
+// -----------------------------
+// Image Widget
+// -----------------------------
+
+.imagewidget .caption {
+    .image-title {
+        font-family: @font-swatch4-font-family;
+        font-size: @font-swatch4-font-size;
+        line-height: @font-swatch4-line-height;
+        color: @font-swatch4-color;
+        @media only screen and (max-width: 735px) {
+            font-size: bkscale(@font-swatch4-font-size,0.9);
+            line-height: bkscale(@font-swatch4-line-height,0.9);
+        }
+    }
+    .image-description {
+        font-size: bkscale(@font-swatch5-font-size,0.9);
+        line-height: bkscale(@font-swatch5-line-height,0.9);
+        color: @font-swatch5-color;
+        @media @tablet {
+            font-size: bkscale(@font-swatch5-font-size,0.8);
+            line-height: bkscale(@font-swatch5-line-height,0.8);
+        }
+    }
+}
+
+
+
+
+// -----------------------------
+//  Divider (Keyline)
+// -----------------------------
+
+hr.rule {
+    height: 1px;
+    background-color: lighten(@color-swatch5, 8%);
+}
+
+
+// Horizontal rule in blog posts
+hr {
+    height: 1px;
+    border: 0;
+    margin-bottom: 18px;
+    background-color: lighten(@color-swatch5, 8%);
+}
+
+
+
+
+
+
+// -----------------------------
+// Text Size for Tablet & Mobile
+// -----------------------------
+
+@media @tablet {
+    h1 {
+        font-size: bkscale(@font-swatch1-font-size,0.9);
+        line-height: bkscale(@font-swatch1-line-height,0.9);
+    }
+    h2, .company-link  {
+        font-size: bkscale(@font-swatch2-font-size,0.9);
+        line-height: bkscale(@font-swatch2-line-height,0.9);
+    }
+    p, li, ol, blockquote, code, pre, time, td, th, .via, .profile a, .content a,
+    .responsiveslideshow .caption .image-description,
+    .category-link, .tag-link, .quantity-field,
+    .menusections-item a, .bk-pt-menu .menusections-item a,
+    .product-body {
+        font-size: bkscale(@font-swatch5-font-size,0.9);
+        line-height: bkscale(@font-swatch5-line-height,0.9);
+    }
+}
+
+@media @mobile {
+    h1 {
+        font-size: bkscale(@font-swatch1-font-size,0.8);
+        line-height: bkscale(@font-swatch1-line-height,0.8);
+    }
+    h2, .company-link  {
+        font-size: bkscale(@font-swatch2-font-size,0.8);
+        line-height: bkscale(@font-swatch2-line-height,0.8);
+    }
+    h3 {
+        font-size: bkscale(@font-swatch3-font-size,0.9);
+        line-height: bkscale(@font-swatch3-line-height,0.9);
+    }
+    h4, .account-link, .legend,
+    .listing-title {
+        font-size: bkscale(@font-swatch4-font-size,0.9);
+        line-height: bkscale(@font-swatch4-line-height,0.9);
+    }
+    p, li, ol, blockquote, code, pre, time, td, th, .via, .profile a, .content a,
+    .responsiveslideshow .caption .image-description,
+    .category-link, .tag-link, .quantity-field,
+    .menusections-item a, .bk-pt-menu .menusections-item a,
+    .product-body {
+        font-size: bkscale(@font-swatch5-font-size,0.8);
+        line-height: bkscale(@font-swatch5-line-height,0.8);
+    }
+}
+

@@ -1,0 +1,116 @@
+{
+    "name": "Written",
+    "thumbnail": "thumbnail.png",
+    "screenshot": "written-screenshot.jpg",
+    "widgetVersion":2,
+    "pageTypes": ["home"],
+    "templateType":"blog",
+    "tags": {
+        "en": ["blog", "photography", "design", "portfolio", "gallery", "camera", "images", "technology", "creative", "media"],
+        "es": ["blog", "fotografía", "diseño", "portafolio", "galería", "cámara", "imágenes", "tecnología", "creativo", "comunicación"],
+        "br": ["blog", "fotografia", "design", "portfolio", "galeria", "câmara", "imagens", "tecnologia", "criativo", "mídia"]
+    },
+    "images": [
+        "images/logo-default.png"
+    ],
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#f3f0ed",
+            "color2":"#fa5b54",
+            "color3":"#2ba2a9",
+            "color4":"#535353",
+            "color5":"#959595",
+            "color6":"#333333",
+            "color7":"#ffffff"
+        }
+    },
+    "fontSwatch": {
+       "title": "Lora / Ubuntu",
+        "font1": {
+            "font-family": "\"Lora\", \"Georgia\", serif",
+            "font-size": "36px",
+            "font-weight": "400",
+            "line-height": "46px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Lora\", \"Georgia\", serif",
+            "font-size": "34px",
+            "font-weight": "400",
+            "line-height": "44px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Lora\", \"Georgia\", serif",
+            "font-size": "26px",
+            "font-weight": "400",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Lora\", \"Georgia\", serif",
+            "font-size": "20px",
+            "font-weight": "400",
+            "line-height": "30px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
+            "font-size": "26px",
+            "font-weight": "300",
+            "line-height": "inherit",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch3",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch7",
+            "background-color-hover": "@color-swatch7"
+         },
+        "font7": {
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "26px",
+            "color": "@color-swatch7",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch4",
+            "background-color-hover": "@color-swatch3"
+        },
+        "font8": {
+            "font-family": "\"Lora\", \"Georgia\", serif",
+            "font-size": "36px",
+            "font-weight": "400",
+            "line-height": "46px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
+            "font-size": "18px",
+            "font-weight": "700",
+            "line-height": "28px",
+            "color": "@color-swatch3",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
+            "font-size": "24px",
+            "font-weight": "700",
+            "line-height": "34px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        }
+    }
+}

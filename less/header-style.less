@@ -1,0 +1,199 @@
+// --------------
+// Header
+// --------------
+
+.template-homepage .template-header {
+    min-height: 57px;
+    @media only screen and (min-width: 901px) {
+        position: fixed;
+        width: 100%;
+        z-index: 99999999;
+    }
+}
+
+.template-header {
+    min-height: 67px;
+    padding-top: 20px;
+    background-color: @color-swatch7;
+}
+
+
+// --------------
+// Brand
+// --------------
+
+.brand {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 14px;
+}
+
+.company-link:hover {
+    color: @color-swatch2;
+    text-decoration: none;
+}
+
+.logo-image {
+    padding-top: 6px;
+}
+
+
+
+// Search icon
+
+    .header-blog-search .blogsearch {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        .transform(@y:-100%, @x:0);
+        transition-duration: 0.4s;
+
+
+        z-index: 2;
+
+        padding: 150px 100px;
+        background-color: @color-swatch2;
+
+        // Allows scrolling on mobile
+        .blogsearch-open & {
+            overflow: auto;
+        }
+
+        @media @bp-mobile {
+            padding: 90px 0 0 0;
+        }
+    }
+
+    // Blog Search when nav is blogsearch-open
+    .blogsearch-open .blogsearch {
+      .transform(@x:0, @y:0);
+    }
+
+
+    // Hides blogsearch until toggled
+    .header-blog-search .blogsearch {
+        margin: 0;
+            .blogsearch-open & {
+                display: block;
+            }
+    }
+
+    // Search Toggle Icon
+
+    .header-search-icon {
+        position: absolute;
+        top: 9px;
+        right: 10px;
+        .animation;
+        // Displays as icon's middle bar
+        background-clip: content-box;
+        width: 50px;
+        height: 47px;
+        margin: 5px 15px;
+        text-indent: 9999px;
+        overflow: hidden;
+        display: block;
+
+        .transition(@duration:0.2s, @ease:ease-in-out);
+
+        @media @bp-mobile {
+            margin-top: 12px;
+        }
+
+        &:before {
+                position: absolute;
+                top: 6px;
+                right: 0;
+                content: "\F002";
+                font-family: 'FontAwesome', sans-serif;
+                font-size: 24px;
+                color: @color-swatch6;
+                .transition(@duration:0.2s, @ease:ease-in-out);
+                @media @mobile {
+                    top: 3px;
+                }
+            }
+
+        &:hover {
+            &:before {
+                color: blue;
+                .transition(@duration:0.2s, @ease:ease-in-out);
+            }
+        }
+
+        // Toggle Button blogsearch-open state
+        // ------------------------------
+
+        .blogsearch-open & {
+            background-color: fade(@color-swatch7, 0%);
+            z-index: 100000;
+
+            &:after, &:before {
+                content: "";
+                height: 3px;
+                width: 30px;
+                position: absolute;
+                left: 10px;
+                display: block;
+                background: @color-swatch7;
+                margin-right: 0;
+                margin-left: 0;
+                -webkit-transition: all 0.25s ease-in-out;
+                -moz-transition: all 0.25s ease-in-out;
+                -o-transition: all 0.25s ease-in-out;
+                transition: all 0.25s ease-in-out;
+            }
+
+            &:before {
+                top: 23px; background: @color-swatch7; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);
+
+            }
+            &:after {
+                bottom: 21px; background: @color-swatch7; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);
+            }
+        }
+    }
+
+    @keyframes bar1 {
+    0% { top: 13px;}
+    50% { top: 23px;  -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);  }
+    100% {top: 23px; background: @color-swatch1; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);   }
+    }
+
+    @-webkit-keyframes bar1 {
+        0% { top: 13px;}
+        50% { top: 23px; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);   }
+        100% {  }
+    }
+
+    @keyframes bar2 {
+        0% { bottom: 13px;}
+        50% { bottom: 21px;  -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);  }
+        100% {}
+    }
+
+    @-webkit-keyframes bar2 {
+        0% { bottom: 13px;}
+        50% { bottom: 21px;  -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);   }
+        100% {}
+    }
+
+

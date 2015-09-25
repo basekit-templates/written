@@ -1,0 +1,152 @@
+<!doctype html>
+<!--[if lt IE 7]>
+    <html class="no-js ie6 oldie" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+    <html class="no-js ie7 oldie" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+    <html class="no-js ie8 oldie" lang="en">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="{{ page.seoLang }}">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="keywords" content="{{ page.keywords }}" />
+    <meta name="description" content="{{ page.description }}" />
+
+    {% if site.favicon %}
+        <link rel="icon" href="{{ site.favicon['favicon'] }}" type="image/x-icon" />
+        <link rel="SHORTCUT ICON" href="{{ site.favicon['thumbnail'] }}?v={{ "now"|date("U") }}" type="image/x-icon" />
+    {% endif %}
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    {% include basekit.headScript %}
+</head>
+<body class="{{ page.backgroundClass }}">
+
+    {% block content %}
+    {% endblock %}
+
+    {% include basekit.bodyScript %}
+
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ asset('libs/jquery-1.10.2.min.js')}}"><\/script>')</script>
+
+    <!-- Clickable -->
+    <script src="{{ asset('js/clickable.js')}}"></script>
+
+    <!-- Nav Menu & Blog Search Script -->
+    <script>
+
+        // Nav
+        $( ".navigation-toggle" ).click(function() {
+            $( ".bk-extendednavigation" ).toggleClass( "open" ); // Toggles class open to display/hide the whole navigation
+            $( "body" ).toggleClass( "noscroll" ); // Toggles class open to add noscroll to body
+        });
+
+        // Blog Search
+        $( ".header-search-icon" ).click(function() {
+            $( "body" ).toggleClass( "noscroll blogsearch-open" ); // Add noscroll and blogsearch-open to body
+        });
+
+    </script>
+
+
+
+
+
+<!-- Feature -->
+
+<script>
+
+var featureHeight = $(".feature-container").height();
+var featurePosition = $(".feature-container").position();
+var featureTriggerValue = featureHeight + featurePosition.top;
+var window_height = window.innerHeight;
+var offsetAmount;
+var textBoxHeight = $(".content-inner-wrap").height();
+
+function checkFeatureDimensions() {
+    featureHeight = $(".feature-container").height();
+    featurePosition = $(".feature-container").position();
+    featureTriggerValue = featureHeight + featurePosition.top;
+    window_height = window.innerHeight;
+}
+
+
+
+
+// Feature parralax fade effect
+var scrollEffect = function (elem) {
+
+    // How high the window is
+
+    if ( window.pageYOffset > (featureTriggerValue - window_height)  ) {
+
+        if(featureTriggerValue > window_height) {
+            offsetAmount = window.pageYOffset - (featureTriggerValue - window_height);
+        }
+        else {
+            offsetAmount = window.pageYOffset;
+        }
+
+        // Apply styles as user scrolls
+        elemInner.setAttribute(
+            "style", "opacity:" + Math.max(0, parseFloat(1-(2/window_height*(offsetAmount))).toFixed(2)) + ";"
+        );
+    }
+};
+
+var elem = document.querySelector('.content-wrap');
+var elemInner = document.querySelector('.feature');
+
+
+window.onscroll = function(e) {
+    scrollEffect(elem);
+};
+
+$( window ).resize(function() {
+  checkFeatureDimensions();
+});
+
+</script>
+
+
+<!-- Image zoom on hover on single product -->
+
+<script>
+
+// Run immediately and assign a global variable (touch_enabled) so it is accessible anywhere.
+
+// First try to detect (not entirely reliable)
+window.touch_enabled = !!('ontouchstart' in window) || !!('onmsgesturechange' in window);
+
+// Overwrite/set touch enabled to false on mousemove
+$(window).on('mousemove', function() { window.touch_enabled = false; });
+
+// Overwrite/set touch enabled to true on touchstart
+$(window).on('touchstart', function () { window.touch_enabled = true; });
+
+if(window.touch_enabled == false){
+
+    $('.product-image')
+    // tile mouse actions
+    .on('mouseover', function(){
+      $(this).children('.image-link').css({'transform': 'scale(2)'});
+    })
+    .on('mouseout', function(){
+      $(this).children('.image-link').css({'transform': 'scale(1)'});
+    })
+    .on('mousemove', function(e){
+      $(this).children('.image-link').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+    })
+}
+
+ </script>
+
+</body>
+</html>

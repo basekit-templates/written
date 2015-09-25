@@ -2,6 +2,10 @@
 // Blog Posts List
 // -----------------------------------
 
+.template-homepage .blogpostlist {
+    padding-top: 40px;
+}
+
 .blogpostlist {
     padding-top: 20px;
     .post-article {
@@ -193,11 +197,15 @@
     .post-content,
     .post-footer {
         display: inline-block;
-        width: 50%;
-        max-width: 960px;
-        margin: 0 25%;
+        width: 40%;
+        max-width: none;
+        margin: 0 30%;
         background-color: @color-swatch7;
         z-index: 2;
+        @media only screen and (max-width: 1900px) {
+            width: 50%;
+            margin: 0 25%;
+        }
         @media only screen and (max-width: 1500px) {
             width: 60%;
             margin: 0 20%;

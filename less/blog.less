@@ -29,9 +29,24 @@
         -ms-flex-align: stretch;
         align-items: stretch;
 
-        background-color: rgba(0,0,0,0.3);
-
+        background-color: darken(@color-swatch3, 15%);
     }
+
+    .post-article--has-image {
+        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter ….3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+        filter: gray;
+        -webkit-filter: grayscale(30%);
+        .image-link {
+                opacity: 0.3;
+        }
+        &:hover {
+            -webkit-filter: grayscale(0%);
+            .image-link {
+                opacity: 1;
+            }
+        }
+    }
+
     .post-article--has-image .post-image,
     .post-image {
         .image-link {

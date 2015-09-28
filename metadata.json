@@ -6,12 +6,13 @@
     "pageTypes": ["home", "blogpost"],
     "templateType":"blog",
     "tags": {
-        "en": ["blog", "photography", "design", "portfolio", "gallery", "camera", "images", "technology", "creative", "media"],
-        "es": ["blog", "fotografía", "diseño", "portafolio", "galería", "cámara", "imágenes", "tecnología", "creativo", "comunicación"],
-        "br": ["blog", "fotografia", "design", "portfolio", "galeria", "câmara", "imagens", "tecnologia", "criativo", "mídia"]
+        "en": ["blog", "photography", "design", "portfolio", "gallery", "images", "technology", "creative", "media"],
+        "es": ["blog", "fotografía", "diseño", "portafolio", "galería", "imágenes", "tecnología", "creativo", "comunicación"],
+        "br": ["blog", "fotografia", "design", "portfolio", "galeria", "imagens", "tecnologia", "criativo", "mídia"]
     },
     "images": [
-        "images/logo-default.png"
+        "images/logo-default.png",
+        "images/feature-bg.jpg"
     ],
     "colorSwatches":
     {
@@ -25,11 +26,11 @@
             "color7":"#ffffff"
         },
         "Swatch 2": {
-            "color1":"#f3f0ed",
-            "color2":"#2ba2a9",
-            "color3":"#2ba2a9",
-            "color4":"#535353",
-            "color5":"#959595",
+            "color1":"#f6f6f6",
+            "color2":"#b0f0f4",
+            "color3":"#0092d7",
+            "color4":"#0182bf",
+            "color5":"#687378",
             "color6":"#ffffff",
             "color7":"#ffffff"
         }

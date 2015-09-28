@@ -23,6 +23,8 @@
 // --------------
 
 .brand {
+    max-width: 65%;
+    margin: 0 auto;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -42,6 +44,8 @@
     -ms-flex-align: center;
     align-items: center;
     padding-bottom: 14px;
+    @media @mobile {
+    }
 }
 
 .company-link:hover {
@@ -51,6 +55,7 @@
 
 .logo-image {
     padding-top: 6px;
+    padding-right: 3px;
 }
 
 
@@ -109,7 +114,7 @@
     .header-search-icon {
         position: absolute;
         top: 9px;
-        right: 10px;
+        right: 0;
         .animation;
         // Displays as icon's middle bar
         background-clip: content-box;
@@ -136,7 +141,7 @@
                 color: @color-swatch4;
                 .transition(@duration:0.2s, @ease:ease-in-out);
                 @media @mobile {
-                    top: 3px;
+                    top: 0;
                 }
             }
 

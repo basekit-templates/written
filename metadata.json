@@ -18,19 +18,37 @@
     {
         "Swatch 1": {
             "color1":"#f3f0ed",
-            "color2":"#fae596",
+            "color2":"#B8FBFF",
             "color3":"#2ba2a9",
-            "color4":"#535353",
+            "color4":"#6D615B",
             "color5":"#959595",
             "color6":"#ffffff",
             "color7":"#ffffff"
         },
         "Swatch 2": {
+            "color1":"#f3f0ed",
+            "color2":"#695c5c",
+            "color3":"#ff8181",
+            "color4":"#695c5c",
+            "color5":"#878080",
+            "color6":"#ffffff",
+            "color7":"#ffffff"
+        },
+        "Swatch 3": {
             "color1":"#f6f6f6",
-            "color2":"#b0f0f4",
+            "color2":"#c2fafd",
             "color3":"#0092d7",
             "color4":"#0182bf",
             "color5":"#687378",
+            "color6":"#ffffff",
+            "color7":"#ffffff"
+        },
+        "Swatch 4": {
+            "color1":"#f3f0ed",
+            "color2":"#D1C5B7",
+            "color3":"#0193B8",
+            "color4":"#785a39",
+            "color5":"#959595",
             "color6":"#ffffff",
             "color7":"#ffffff"
         }
@@ -109,7 +127,7 @@
         "font9": {
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "18px",
-            "font-weight": "700",
+            "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"

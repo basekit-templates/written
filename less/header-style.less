@@ -73,7 +73,7 @@
         }
     }
 
-    .header-blog-search .blogsearch {
+    .header-blog-search .widget {
         position: fixed;
         left: 0;
         top: 0;
@@ -99,13 +99,13 @@
     }
 
     // Blog Search when nav is blogsearch-open
-    .blogsearch-open .blogsearch {
+    .blogsearch-open .widget {
       .transform(@x:0, @y:0);
     }
 
 
     // Hides blogsearch until toggled
-    .header-blog-search .blogsearch {
+    .header-blog-search .widget {
         margin: 0;
             .blogsearch-open & {
                 display: block;

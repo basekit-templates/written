@@ -403,13 +403,16 @@
 
 .ecomproductslist .listing-footer {
     margin-top: 40px;
+    @media @mobile {
+        margin-top: 20px;
+    }
+}
+
+.ecomproductslist .listing-pagination {
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
-    @media @mobile {
-        margin-top: 20px;
-    }
 }
 
 .ecomproductslist .pagination-item {

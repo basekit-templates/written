@@ -30,6 +30,9 @@
         width: 90%;
         margin: 0 5%;
     }
+    .product-header {
+        padding-top: 20px;
+    }
     .product-actions .form {
         legend {
             padding: 0;
@@ -85,6 +88,11 @@
             margin-bottom: 20px;
         }
     }
+
+    .no-image {
+        display: none;
+    }
+
     @media only screen and (min-width: 769px) {
         .product-article {
             display: -ms-flexbox;
@@ -159,6 +167,7 @@
         }
 
         .no-image {
+            display: block;
             background-size: contain;
             background-repeat: no-repeat;
             background-position: 50% 50%;

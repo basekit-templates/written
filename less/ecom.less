@@ -3,6 +3,10 @@
 // Ecom Single Product: Full Width Widget
 // --------------------------------------
 
+.ecomproduct-page .container {
+    padding-top: 0;
+}
+
 .container {
     div#page-zones__main-widgets__ecomproduct,
     div#page-zones__main-widgets__ecomproductWidget {
@@ -127,9 +131,12 @@
                 -ms-flex-item-align: auto;
                 align-self: auto;
             }
-            .product-images + .product-content {
+            .product-image .image-link + .product-content {
                 width: 50%;
                 margin-left: 50%;
+            }
+            .ecomproduct__product-image.no-image {
+                display: none;
             }
         }
 
@@ -149,7 +156,7 @@
             background-size: cover;
             background-position: 50% 50%;
             .image {
-                display: none;
+                display: none !important;
             }
         }
 

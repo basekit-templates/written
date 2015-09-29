@@ -5,9 +5,11 @@
         {{widget('logo', 'logo', {"defaultlogo": asset('images/logo-default.png')})|raw}}
         {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
     </div>
+    {% if plugins.blog.live %}
     <div class="header-blog-search">
         <div class="header-search-icon">icon</div>
         {{widget('blogsearch', 'blogsearch', {})|raw}}
     </div>
+    {% endif %}
 </header>
 

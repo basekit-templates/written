@@ -3,7 +3,6 @@
 // --------------
 
 .template-homepage .template-header {
-    min-height: 57px;
     @media only screen and (min-width: 901px) {
         position: fixed;
         width: 100%;
@@ -12,7 +11,7 @@
 }
 
 .template-header {
-    min-height: 67px;
+    min-height: 70px;
     padding-top: 20px;
     background-color: @color-swatch7;
     border: 1px solid darken(@color-swatch1, 3%);
@@ -213,4 +212,10 @@
         100% {}
     }
 
+// Blog search overlay in editor
+// -----------------------------
+
+div#page-zones__template-widgets__blogsearch-blogsearch-bk-overlay {
+    height: 400px;
+}
 

@@ -1,9 +1,5 @@
-// ---------------------
-// Balkan:  Main Styles
-// ---------------------
-
 // -----------------------------
-// 1. LESS Includes
+// LESS Includes
 // -----------------------------
 
 
@@ -24,7 +20,7 @@
 
 
 // -----------------------------
-// 2. Media Queries
+// Media Queries
 // -----------------------------
 
 @bp-tablet: ~"only screen and (max-width: 800px)";
@@ -34,18 +30,18 @@
 
 
 // -----------------------------
-// 3. Typography
+// Anchor links
 // -----------------------------
 
-    // Anchor links
-    a {
-        color: @color-swatch3;
-    }
+a {
+    color: @color-swatch3;
+}
+
 
 
 
 // -----------------------------
-// 3. Global Styles
+// Global Styles
 // -----------------------------
 
 
@@ -340,6 +336,23 @@ hr {
 }
 
 
+
+
+// -----------------------------
+// Click to Call
+// -----------------------------
+
+.clicktocall {
+    @media @mobile {
+        .phone-number-link {
+            width: 100%;
+            text-align: center;
+        }
+        .label {
+            color: @color-swatch7;
+        }
+    }
+}
 
 
 

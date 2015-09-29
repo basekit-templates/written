@@ -195,3 +195,29 @@
     margin-top: 20px;
     text-align: center;
 }
+
+
+// Responsive Columns
+
+// Two Columns
+.columns-two-left,
+.columns-two-right,
+// Three Columns
+.columns-three-left,
+.columns-three-middle,
+.columns-three-right,
+// Four Columns
+.columns-four-first,
+.columns-four-second,
+.columns-four-third,
+.columns-four-fourth {
+    .menu-items:not(.menu-section--subsection),
+    .menu-list {
+        column-count: 1;
+        column-gap: 0;
+        -moz-column-count: 1;
+        -moz-column-gap: 0;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 0;
+    }
+}

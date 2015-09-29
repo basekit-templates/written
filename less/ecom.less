@@ -20,8 +20,6 @@
     .product-image {
         position: relative;
         overflow: hidden;
-    }
-    .product-image .image-link {
         background-color: darken(@color-swatch1, 6%);
     }
     .product-header,
@@ -155,6 +153,12 @@
             .image {
                 display: none !important;
             }
+        }
+
+        .no-image {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
         }
 
         .product-images,

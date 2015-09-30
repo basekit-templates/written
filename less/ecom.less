@@ -475,6 +475,49 @@
 }
 
 
+// Products list in Responsive Columns
+
+// Two Columns
+.columns-two-left,
+.columns-two-right {
+    .product-item {
+        position: relative;
+        width: 48%;
+        margin-bottom: 20px;
+        // Display 100% at mobile
+        @media @mobile {
+            width: 100%;
+        }
+    }
+    .product-item-image,
+    .product-item-image .image-link {
+        height: 150px;
+        line-height: 150px;
+        @media @mobile {
+            height: 200px;
+            line-height: 200px;
+        }
+    }
+}
+
+// Three Columns
+.columns-three-left,
+.columns-three-middle,
+.columns-three-right,
+// Four Columns
+.columns-four-first,
+.columns-four-second,
+.columns-four-third,
+.columns-four-fourth {
+    // Display 100%
+    .product-item {
+        width: 100%;
+    }
+}
+
+
+
+
 // -----------------------------
 // Basket Widget
 // -----------------------------

@@ -214,6 +214,8 @@ body {
     .border-radius(3px);
     p {
         padding-bottom: 0;
+        font-size: bkscale(@font-swatch5-font-size,0.9);
+        line-height: bkscale(@font-swatch5-line-height,0.9);
     }
     .tweet-wrap {
         margin: 0 50px;
@@ -238,14 +240,21 @@ body {
     .account-link {
         font-family: @font-swatch3-font-family;
         color: @color-swatch3;
-        font-size: @font-swatch5-font-size;
-        font-weight: @font-swatch5-font-weight;
-        line-height: @font-swatch5-line-height;
+        font-size: bkscale(@font-swatch3-font-size,0.8);
+        font-weight: @font-swatch3-font-weight;
+        line-height: bkscale(@font-swatch3-line-height,0.8);
     }
     .tweet-metadata {
         font-size: 90%;
-        .timestamp, .via {
-            color: lighten(@color-swatch5, 15%)
+        .timestamp,
+        .via {
+            color: lighten(@color-swatch5, 15%);
+        }
+        .timestamp,
+        .via,
+        a {
+            font-size: bkscale(@font-swatch5-font-size,0.75);
+            line-height: bkscale(@font-swatch5-line-height,0.75);
         }
     }
     .timestamp {

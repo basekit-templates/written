@@ -168,7 +168,10 @@
                 display: none;
             }
             &:hover {
-                .transition(@duration:0.2s, @ease:ease-in-out);
+                -webkit-transition: transform 0.2s ease-in-out;
+                -moz-transition: all transform 0.2s ease-in-out;
+                -o-transition: all transform 0.2s ease-in-out;
+                transition: all transform 0.2s ease-in-out;
             }
         }
 

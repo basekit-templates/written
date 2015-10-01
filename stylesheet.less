@@ -372,13 +372,26 @@ hr {
 // -----------------------------
 
 .clicktocall {
-    @media @bp-mobile {
+    @media only screen and (max-width: 737px) {
         .phone-number-link {
-            width: 100%;
+            min-height: 44px;
+            padding: 8px 20px;
             text-align: center;
+            .border-radius(3px);
+            color: @color-swatch7;
+            background-color: @font-swatch7-background-color;
         }
         .label {
             color: @color-swatch7;
+        }
+        &:hover {
+            background-color: @font-swatch7-background-color-hover;
+            .transition(@duration:0.2s, @ease:ease-in-out);
+        }
+    }
+    @media @mobile {
+        .phone-number-link {
+            width: 100%;
         }
     }
 }

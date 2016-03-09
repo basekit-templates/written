@@ -1,4 +1,26 @@
 // -----------------------------
+// LESS Includes
+// -----------------------------
+
+
+@import "@{templateCommon}/bk-less-framework.less";             // BK LESS Framework
+
+@import "@{templateLocal}/less/variables-mixins.less";          // Variables
+
+@import "@{templateLocal}/less/widget-navigation.less";
+@import "@{templateLocal}/less/header-style.less";
+@import "@{templateLocal}/less/feature.less";
+@import "@{templateLocal}/less/ecom.less";
+@import "@{templateLocal}/less/blog.less";
+@import "@{templateLocal}/less/forms.less";
+@import "@{templateLocal}/less/buttons.less";
+@import "@{templateLocal}/less/slideshow.less";
+@import "@{templateLocal}/less/gallery.less";
+@import "@{templateLocal}/less/menu.less";
+
+// Include for bk-v8-test.less is at the bottom of the page
+
+// -----------------------------
 // Media Queries
 // -----------------------------
 
@@ -13,7 +35,7 @@
 // -----------------------------
 
 a {
-    color: @color-swatch3;
+    color: @color__link--text;
 }
 
 
@@ -25,7 +47,7 @@ a {
 
 
 body {
-    background-color: @color-swatch1;
+    background-color: @color__body--background;
 }
 
 
@@ -159,8 +181,8 @@ body {
         width: 31px;
         height: 31px;
         padding: 5px 8px 6px;
-        color: @color-swatch5;
-        border: 2px solid @color-swatch5;
+        color: @color__socialicons--icon;
+        border: 2px solid @color__socialicons--border;
         &:before {
             margin-right: 0;
             font-size: 14px;
@@ -192,9 +214,10 @@ body {
     position: relative;
     width: 100%;
     padding: 20px 20px 20px 0;
-    background-color: @color-swatch7;
+    background-color: @color__twitter-item--background;
     .border-radius(3px);
     p {
+        color: @color__twitter-tweet--text;
         padding-bottom: 0;
         font-size: bkscale(@font-swatch5-font-size,0.9);
         line-height: bkscale(@font-swatch5-line-height,0.9);
@@ -222,7 +245,7 @@ body {
     }
     .account-link {
         font-family: @font-swatch3-font-family;
-        color: @color-swatch3;
+        color: @color__twitter-account-name--text;
         font-size: bkscale(@font-swatch3-font-size,0.8);
         font-weight: @font-swatch3-font-weight;
         line-height: bkscale(@font-swatch3-line-height,0.8);
@@ -231,7 +254,7 @@ body {
         font-size: 90%;
         .timestamp,
         .via {
-            color: lighten(@color-swatch5, 15%);
+            color: lighten(@color__twitter-tweet--text, 15%);
         }
         .timestamp,
         .via,
@@ -305,7 +328,7 @@ body {
         font-family: @font-swatch4-font-family;
         font-size: @font-swatch4-font-size;
         line-height: @font-swatch4-line-height;
-        color: @font-swatch4-color;
+        color: @color__image-title--text;
         @media only screen and (max-width: 735px) {
             font-size: bkscale(@font-swatch4-font-size,0.9);
             line-height: bkscale(@font-swatch4-line-height,0.9);
@@ -314,7 +337,7 @@ body {
     .image-description {
         font-size: bkscale(@font-swatch5-font-size,0.9);
         line-height: bkscale(@font-swatch5-line-height,0.9);
-        color: @font-swatch5-color;
+        color: @color__image-description--text;
         @media @tablet {
             font-size: bkscale(@font-swatch5-font-size,0.8);
             line-height: bkscale(@font-swatch5-line-height,0.8);
@@ -358,14 +381,14 @@ hr {
             text-align: center;
             .border-radius(3px);
             color: @color-swatch7;
-            background-color: @font-swatch7-background-color;
+            background-color: @color__button--background;
+            &:hover {
+                background-color: @color__button--background--hover;
+                .transition(@duration:0.2s, @ease:ease-in-out);
+            }
         }
         .label {
-            color: @color-swatch7;
-        }
-        &:hover {
-            background-color: @font-swatch7-background-color-hover;
-            .transition(@duration:0.2s, @ease:ease-in-out);
+            color: @color__button--text;
         }
     }
     @media @mobile {
@@ -462,25 +485,9 @@ hr {
 }
 
 
-// -----------------------------
-// LESS Includes
-// -----------------------------
+// --------------------------------
+// LESS Include for bk-v8-test.less
+// --------------------------------
 
-
-@import "@{templateCommon}/bk-less-framework.less";             // BK LESS Framework
-
-@import "@{templateLocal}/less/variables-mixins.less";          // Variables
-
-@import "@{templateLocal}/less/widget-navigation.less";
-@import "@{templateLocal}/less/header-style.less";
-@import "@{templateLocal}/less/feature.less";
-@import "@{templateLocal}/less/ecom.less";
-@import "@{templateLocal}/less/blog.less";
-@import "@{templateLocal}/less/forms.less";
-@import "@{templateLocal}/less/buttons.less";
-@import "@{templateLocal}/less/slideshow.less";
-@import "@{templateLocal}/less/gallery.less";
-@import "@{templateLocal}/less/menu.less";
-
-
+@import "@{templateLocal}/less/bk-v8-test.less";
 

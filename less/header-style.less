@@ -15,7 +15,7 @@
     min-height: 70px;
     padding-top: 20px;
     background-color: @color-swatch7;
-    border: 1px solid darken(@color-swatch1, 3%);
+    border: 1px solid darken(@color__body--background, 3%);
 }
 
 
@@ -51,7 +51,7 @@
 }
 
 .company-link:hover {
-    color: @color-swatch3;
+    color: @color__primary;
     text-decoration: none;
 }
 
@@ -71,10 +71,10 @@
             color: @color-swatch7;
         }
         .button {
-            background-color: @color-swatch3;
+            background-color: @color__primary;
         }
         .button:hover {
-            background-color: lighten(@color-swatch3, 10%);
+            background-color: lighten(@color__primary, 10%);
         }
     }
 
@@ -91,7 +91,7 @@
         z-index: 2;
 
         padding: 150px 100px;
-        background-color: @color-swatch4;
+        background-color: @color__navigation--background;
 
         // Allows scrolling on mobile
         .blogsearch-open & {
@@ -155,7 +155,7 @@
 
         &:hover {
             &:before {
-                color: @color-swatch3;
+                color: @color__primary;
                 .transition(@duration:0.2s, @ease:ease-in-out);
             }
         }
@@ -196,7 +196,7 @@
     @keyframes bar1 {
     0% { top: 13px;}
     50% { top: 23px;  -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);  }
-    100% {top: 23px; background: @color-swatch1; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);   }
+    100% {top: 23px; background: @color__body--background; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);   }
     }
 
     @-webkit-keyframes bar1 {

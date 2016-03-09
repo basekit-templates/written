@@ -199,8 +199,8 @@
             "color__navigation--text": "@font-swatch6-color",
             "color__navigation--text--hover": "@font-swatch6-color-hover",
             "color__navigation--text--selected": "@font-swatch6-color-hover",
+            "color__navigation--background": "@color-swatch4",
             "font__navigation--font-family" : "@font-swatch6-font-family",
-
             "font__navigation--font-size" : "@font-swatch6-font-size",
             "font__navigation--font-weight" : "@font-swatch6-font-weight",
             "font__navigation--line-height" : "@font-swatch6-line-height",
@@ -209,7 +209,7 @@
         "feature": {
             "color__feature-headline--text": "@font-swatch8-color",
             "color__feature-strapline--text": "@font-swatch9-color",
-            "color__feature-content--background":"#000000",
+            "color__feature-content--background":"#ffffff",
             "color__feature-button--text": "@font-swatch7-color",
             "color__feature-button--border": "transparent",
             "color__feature-button--background": "@font-swatch7-background-color",
@@ -228,9 +228,9 @@
         },
         "forms": {
             "color__form-legend--text": "@font-swatch3-color",
-            "color__form-label--text": "@font-swatch3-color",
+            "color__form-label--text": "@color__primary",
             "color__form--background": "@color-swatch7",
-            "color__form--border": "darken(@color__form--background,3%)"
+            "color__form--border": "darken(@color__body--background,3%)"
         },
         "image": {
             "color__image-title--text": "@color-swatch4",
@@ -246,8 +246,8 @@
             "color__slideshow-title--text": "@font-swatch8-color",
             "color__slideshow-description--text": "@font-swatch9-color",
             "color__slideshow-caption--background": "@color-swatch7",
-            "color__slideshow-pagination-item--background": "hsla(hue(@color-swatch1), saturation(@color-swatch1), lightness(@color-swatch1), 0.5)",
-            "color__slideshow-pagination-item--background--selected": "@color__secondary"
+            "color__slideshow-pagination-item--background": "darken(@color__body--background, 10%)",
+            "color__slideshow-pagination-item--background--selected": "@color-swatch4"
         },
         "twitter": {
             "color__twitter-item--background": "@color-swatch7",
@@ -255,21 +255,19 @@
             "color__twitter-tweet--text": "@font-swatch5-color"
         },
         "socialicons": {
-            "color__socialicons--icon": "@color-swatch4",
-            "color__socialicons--border": "@color-swatch4"
+            "color__socialicons--icon": "@color-swatch5",
+            "color__socialicons--border": "@color-swatch5"
         },
         "blog": {
-            "color__blogsearch-legend--text": "@color__form-legend--text",
-            "color__blogpostlist-title--text": "@color__secondary",
+            "color__blogpostlist-title--text": "@color-swatch7",
+            "color__blogpostlist--background": "@color-swatch4",
             "color__blogpost-article--background": "@color-swatch7",
             "color__blogpost-title--text": "@font-swatch1-color"
         },
         "ecommerce": {
-            "color__ecomproductslist-label--text": "@color__form-label--text",
-            "color__ecomproductslist-product-item--background": "@color-swatch7",
             "color__ecomproductslist-product-title--text": "@color__primary",
-            "color__ecomproduct-images--background": "transparent",
-            "color__ecomproduct-content--background": "@color-swatch7",
+            "color__ecomproduct-images--background": "darken(@color-swatch1, 6%)",
+            "color__ecomproduct-content--background": "darken(@color-swatch1, 3%)",
             "color__ecomproduct-title--text": "@font-swatch1-color",
             "color__ecomproduct-price--text": "@font-swatch1-color"
         }

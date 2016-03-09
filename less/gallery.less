@@ -5,12 +5,6 @@
 // Gallery 3 column layout
 // -----------------------
 
-// Title and description colour
-.image-title,
-.image-description {
-    color: @color-swatch1;
-}
-
 // Gallery list container
 .gallery-list {
     display: -webkit-box;
@@ -72,7 +66,7 @@
         font-family: @font-swatch4-font-family;
         font-size: @font-swatch4-font-size;
         line-height: @font-swatch4-line-height;
-        color: @font-swatch4-color;
+        color: @color__gallery-title--text;
         @media only screen and (max-width: 735px) {
             font-size: bkscale(@font-swatch4-font-size,0.9);
             line-height: bkscale(@font-swatch4-line-height,0.9);
@@ -81,7 +75,7 @@
     .image-description {
         font-size: bkscale(@font-swatch5-font-size,0.8);
         line-height: bkscale(@font-swatch5-line-height,0.8);
-        color: @font-swatch5-color;
+        color: @color__gallery-description--text;
         @media @tablet {
             font-size: bkscale(@font-swatch5-font-size,0.7);
             line-height: bkscale(@font-swatch5-line-height,0.7);
@@ -124,10 +118,7 @@
     bottom: 8px;
     margin: 0;
     padding: 20px;
-    background-color: hsla(hue(@color-swatch7),
-                           saturation(@color-swatch7),
-                           lightness(@color-swatch7),
-                           0.8);
+    background-color: @color__gallery-caption--background;
     opacity: 0;
     text-align: center;
 }

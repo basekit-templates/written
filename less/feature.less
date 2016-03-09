@@ -43,8 +43,8 @@
         margin: 0 5%;
         margin-bottom: -100px;
         padding: 40px 0;
-        background-color: @color-swatch7;
-        border: 1px solid darken(@color-swatch1, 3%);
+        background-color: @color__feature-content--background;
+        border: 1px solid darken(@color__feature-content--background, 3%);
         @media only screen and (min-width: 1140px) {
             width: 960px; // 1140px - 10% for margins
             margin: 0 auto;
@@ -57,6 +57,18 @@
     }
     .headline {
         padding: 5px 0;
+        font-family: @font__feature-headline--font-family;
+        color: @color__feature-headline--text;
+        font-size: @font__feature-headline--font-size;
+        font-weight: @font__feature-headline--font-weight;
+        line-height: @font__feature-headline--line-height;
+    }
+    .strapline {
+        font-family: @font__feature-strapline--font-family;
+        color: @color__feature-strapline--text;
+        font-size: @font__feature-strapline--font-size;
+        font-weight: @font__feature-strapline--font-weight;
+        line-height: @font__feature-strapline--line-height;
     }
 
     .headline,
@@ -76,8 +88,8 @@
     .button {
         position: relative;
         background-color: transparent;
-        color: @color-swatch4;
-        font-size: @font-swatch9-font-size;
+        color: @color__feature-headline--text;
+        font-size: @font__feature-strapline--font-size;
         padding-left: 0;
         &:after {
             content: "\2192";
@@ -86,7 +98,7 @@
             padding-top: 1px;
         }
         &:hover {
-            color: @color-swatch3;
+            color: @color__link--text;
             background-color: transparent;
         }
     }

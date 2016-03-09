@@ -13,7 +13,7 @@ textarea,
     -webkit-border-radius: 0;
        -moz-border-radius: 0;
             border-radius: 0;
-    background-color: @color-swatch1;
+    background-color: @color__body--background;
     border: none;
 }
 
@@ -107,7 +107,7 @@ textarea,
     font-size: @font-swatch3-font-size;
     font-weight: @font-swatch3-font-weight;
     line-height: @font-swatch3-line-height;
-    color: @font-swatch3-color;
+    color: @color__form-legend--text;
 }
 
 .contactform .legend {
@@ -116,7 +116,7 @@ textarea,
 
 .label {
     font-family: @font-swatch5-font-family;
-    color: @color-swatch3;
+    color: @color__form-label--text;
     font-size: bkscale(@font-swatch5-font-size,0.9);
     line-height: bkscale(@font-swatch5-line-height,0.9);
 }
@@ -136,8 +136,8 @@ textarea,
 .blogsearch {// Blog
     padding: 20px 30px;
     .border-radius(3px);
-    background-color: @color-swatch7;
-    border: 1px solid darken(@color-swatch1, 3%);
+    background-color: @color__form--background;
+    border: 1px solid @color__form--border;
 }
 
 // Buttons in forms

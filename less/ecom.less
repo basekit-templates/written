@@ -16,11 +16,20 @@
 }
 
 .ecomproduct {
-    background-color: darken(@color-swatch1, 3%);
+    background-color: @color__ecomproduct-content--background;
     .product-image {
         position: relative;
         overflow: hidden;
-        background-color: darken(@color-swatch1, 6%);
+        background-color: @color__ecomproduct-images--background;
+    }
+    .product-title {
+        color: @color__ecomproduct-title--text;
+    }
+    .product-price {
+        color: @color__ecomproduct-price--text;
+    }
+    .gallery-item {
+         background-color: transparent;
     }
     .product-content {
         display: inline-block;
@@ -81,9 +90,9 @@
         float: right;
         width: 47%;
         text-align: center;
-        background-color: @font-swatch7-background-color-hover;
+        background-color: @color__button--background--hover;
         &:hover {
-            background-color: @font-swatch7-background-color;
+            background-color: @color__button--background;
         }
         @media only screen and (max-width: 450px) {
             width: 100%;
@@ -390,7 +399,7 @@
 
 .product-item-image,
 .product-item-image .image-link {
-    background-color: @color-swatch1;
+    background-color: @color__body--background;
     height: 307px;
     line-height: 307px;
     @media only screen and (max-width: 800px) {
@@ -421,7 +430,7 @@
         font-size:@font-swatch5-font-size;
         font-weight: @font-swatch5-font-weight;
         line-height:@font-swatch5-line-height;
-        color: @color-swatch3;
+        color: @color__ecomproductslist-product-title--text;
         letter-spacing: @font-swatch5-letter-spacing;
         &:hover {
             color: @color-swatch3;
@@ -546,7 +555,7 @@
 .basket-item {
     position: relative;
     padding-bottom: 20px;
-    border-bottom: 1px solid darken(@color-swatch1, 8%);
+    border-bottom: 1px solid darken(@color__body--background, 8%);
 }
 
 .item-image  { width: 200px; }
@@ -625,7 +634,7 @@
 
 .basket-total {
     padding-bottom: 20px;
-    border-bottom: 1px solid darken(@color-swatch1, 8%);
+    border-bottom: 1px solid darken(@color__body--background, 8%);
 }
 
 // View Basket Button
@@ -661,7 +670,7 @@
         background-color: transparent;
     }
     .table-row {
-        border: 1px solid darken(@color-swatch1, 8%);
+        border: 1px solid darken(@color__body--background, 8%);
         &:last-child {
             border: none;
         }

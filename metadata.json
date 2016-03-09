@@ -260,7 +260,7 @@
         },
         "blog": {
             "color__blogpostlist-title--text": "@color-swatch7",
-            "color__blogpostlist--background": "@color-swatch4",
+            "color__blogpostlist-article--background": "@color-swatch4",
             "color__blogpost-article--background": "@color-swatch7",
             "color__blogpost-title--text": "@font-swatch1-color"
         },

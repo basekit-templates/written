@@ -219,8 +219,8 @@ body {
     p {
         color: @color__twitter-tweet--text;
         padding-bottom: 0;
-        font-size: bkscale(@font-swatch5-font-size,0.9);
-        line-height: bkscale(@font-swatch5-line-height,0.9);
+        font-size: bkscale(@font__p--font-size,0.9);
+        line-height: bkscale(@font__p--line-height,0.9);
     }
     .tweet-wrap {
         width: 100%;
@@ -244,11 +244,11 @@ body {
         }
     }
     .account-link {
-        font-family: @font-swatch3-font-family;
+        font-family: @font__h3--font-family;
         color: @color__twitter-account-name--text;
-        font-size: bkscale(@font-swatch3-font-size,0.8);
-        font-weight: @font-swatch3-font-weight;
-        line-height: bkscale(@font-swatch3-line-height,0.8);
+        font-size: bkscale(@font__h3--font-size,0.8);
+        font-weight: @font__h3--font-weight;
+        line-height: bkscale(@font__h3--line-height,0.8);
     }
     .tweet-metadata {
         font-size: 90%;
@@ -260,8 +260,8 @@ body {
         .via,
         a,
         span {
-            font-size: bkscale(@font-swatch5-font-size,0.75);
-            line-height: bkscale(@font-swatch5-line-height,0.75);
+            font-size: bkscale(@font__p--font-size,0.75);
+            line-height: bkscale(@font__p--line-height,0.75);
         }
         .retweeted-by {
             display: inline-block;
@@ -325,22 +325,22 @@ body {
 
 .imagewidget .caption {
     .image-title {
-        font-family: @font-swatch4-font-family;
-        font-size: @font-swatch4-font-size;
-        line-height: @font-swatch4-line-height;
+        font-family: @font__h4--font-family;
+        font-size: @font__h4--font-size;
+        line-height: @font__h4--line-height;
         color: @color__image-title--text;
         @media only screen and (max-width: 735px) {
-            font-size: bkscale(@font-swatch4-font-size,0.9);
-            line-height: bkscale(@font-swatch4-line-height,0.9);
+            font-size: bkscale(@font__h4--font-size,0.9);
+            line-height: bkscale(@font__h4--line-height,0.9);
         }
     }
     .image-description {
-        font-size: bkscale(@font-swatch5-font-size,0.9);
-        line-height: bkscale(@font-swatch5-line-height,0.9);
+        font-size: bkscale(@font__p--font-size,0.9);
+        line-height: bkscale(@font__p--line-height,0.9);
         color: @color__image-description--text;
         @media @tablet {
-            font-size: bkscale(@font-swatch5-font-size,0.8);
-            line-height: bkscale(@font-swatch5-line-height,0.8);
+            font-size: bkscale(@font__p--font-size,0.8);
+            line-height: bkscale(@font__p--line-height,0.8);
         }
     }
 }
@@ -407,80 +407,80 @@ hr {
 
 @media only screen and (max-width: 901px) {
     h1 {
-        font-size: bkscale(@font-swatch1-font-size,0.9);
-        line-height: bkscale(@font-swatch1-line-height,0.9);
+        font-size: bkscale(@font__h1--font-size,0.9);
+        line-height: bkscale(@font__h1--line-height,0.9);
     }
     h2 {
-        font-size: bkscale(@font-swatch2-font-size,0.9);
-        line-height: bkscale(@font-swatch2-line-height,0.9);
+        font-size: bkscale(@font__h2--font-size,0.9);
+        line-height: bkscale(@font__h2--line-height,0.9);
     }
     p, li, ol, blockquote, code, pre, time, td, th, .via, .profile a, .content a,
     .responsiveslideshow .caption .image-description,
     .category-link, .tag-link, .quantity-field,
     .menusections-item a, .bk-pt-menu .menusections-item a,
     .product-body {
-        font-size: bkscale(@font-swatch5-font-size,0.9);
-        line-height: bkscale(@font-swatch5-line-height,0.9);
+        font-size: bkscale(@font__p--font-size,0.9);
+        line-height: bkscale(@font__p--line-height,0.9);
     }
     .feature .headline {
-        font-size: bkscale(@font-swatch8-font-size,0.85);
-        line-height: bkscale(@font-swatch8-line-height,0.85);
+        font-size: bkscale(@font__feature-headline--font-size,0.85);
+        line-height: bkscale(@font__feature-headline--line-height,0.85);
     }
     .feature .strapline {
-        font-size: bkscale(@font-swatch9-font-size,0.9);
-        line-height: bkscale(@font-swatch9-line-height,0.9);
+        font-size: bkscale(@font__feature-strapline--font-size,0.9);
+        line-height: bkscale(@font__feature-strapline--line-height,0.9);
     }
     .feature .button {
-        font-size: bkscale(@font-swatch7-font-size,0.9);
-        line-height: bkscale(@font-swatch7-line-height,0.9);
+        font-size: bkscale(@font__button--font-size,0.9);
+        line-height: bkscale(@font__button--line-height,0.9);
     }
     .navigation-item .item-name {
-        font-size: bkscale(@font-swatch6-font-size,0.9);
-        line-height: bkscale(@font-swatch6-line-height,0.9);
+        font-size: bkscale(@font__navigation--font-size,0.9);
+        line-height: bkscale(@font__navigation--line-height,0.9);
     }
 }
 
 @media only screen and (max-width: 737px) {
     h1 {
-        font-size: bkscale(@font-swatch1-font-size,0.8);
-        line-height: bkscale(@font-swatch1-line-height,0.8);
+        font-size: bkscale(@font__h1--font-size,0.8);
+        line-height: bkscale(@font__h1--line-height,0.8);
     }
     h2 {
-        font-size: bkscale(@font-swatch2-font-size,0.73);
-        line-height: bkscale(@font-swatch2-line-height,0.73);
+        font-size: bkscale(@font__h2--font-size,0.73);
+        line-height: bkscale(@font__h2--line-height,0.73);
     }
     h3 {
-        font-size: bkscale(@font-swatch3-font-size,0.9);
-        line-height: bkscale(@font-swatch3-line-height,0.9);
+        font-size: bkscale(@font__h3--font-size,0.9);
+        line-height: bkscale(@font__h3--line-height,0.9);
     }
     h4, .account-link, .legend,
     .listing-title {
-        font-size: bkscale(@font-swatch4-font-size,0.9);
-        line-height: bkscale(@font-swatch4-line-height,0.9);
+        font-size: bkscale(@font__h4--font-size,0.9);
+        line-height: bkscale(@font__h4--line-height,0.9);
     }
     p, li, ol, blockquote, code, pre, time, td, th, .via, .profile a, .content a,
     .responsiveslideshow .caption .image-description,
     .category-link, .tag-link, .quantity-field,
     .menusections-item a, .bk-pt-menu .menusections-item a,
     .product-body {
-        font-size: bkscale(@font-swatch5-font-size,0.8);
-        line-height: bkscale(@font-swatch5-line-height,0.8);
+        font-size: bkscale(@font__p--font-size,0.8);
+        line-height: bkscale(@font__p--line-height,0.8);
     }
     .feature .headline {
-        font-size: bkscale(@font-swatch8-font-size,0.7);
-        line-height: bkscale(@font-swatch8-line-height,0.7);
+        font-size: bkscale(@font__feature-headline--font-size,0.7);
+        line-height: bkscale(@font__feature-headline--line-height,0.7);
     }
     .feature .strapline {
-        font-size: bkscale(@font-swatch9-font-size,0.8);
-        line-height: bkscale(@font-swatch9-line-height,0.8);
+        font-size: bkscale(@font__feature-strapline--font-size,0.8);
+        line-height: bkscale(@font__feature-strapline--line-height,0.8);
     }
     .feature .button {
-        font-size: bkscale(@font-swatch7-font-size,0.8);
-        line-height: bkscale(@font-swatch7-line-height,0.8);
+        font-size: bkscale(@font__button--font-size,0.8);
+        line-height: bkscale(@font__button--line-height,0.8);
     }
     .navigation-item .item-name {
-        font-size: bkscale(@font-swatch6-font-size,0.75);
-        line-height: bkscale(@font-swatch6-line-height,0.75);
+        font-size: bkscale(@font__navigation--font-size,0.75);
+        line-height: bkscale(@font__navigation--line-height,0.75);
     }
 }
 

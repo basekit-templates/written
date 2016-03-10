@@ -36,6 +36,7 @@
     top: 0;
     height: 100vh;
     width: 100%;
+    margin: 0;
     .transform(@y:-100%, @x:0);
     transition-duration: 0.4s;
 
@@ -57,12 +58,11 @@
 
 
 // Hides navigation until toggled
-.navigation-list {
-    margin: 0;
-        &.open {
-            display: block;
-        }
+.extendednavigation.open .navigation-list {
+    display: block;
 }
+
+
 
 
 // Navigation Item

@@ -46,11 +46,6 @@
     padding: 150px 100px;
     background-color: @color__navigation--background;
 
-    // Allows scrolling on mobile
-    &.open {
-        overflow: auto;
-    }
-
     @media @bp-mobile {
         padding: 90px 0 0 0;
     }
@@ -60,6 +55,16 @@
 // Hides navigation until toggled
 .extendednavigation.open .navigation-list {
     display: block;
+    // Allows scrolling on mobile
+    overflow: auto;
+    // Navigation item when nav is open
+    .transform(@x:0, @y:0);
+
+    .navigation-item {
+        .transform(@x:0, @y:0);
+        display: block;
+        opacity: 1;
+    }
 }
 
 
@@ -94,18 +99,6 @@
 // Adds Hover State
 .navigation-item .item-name:hover {
     text-decoration: underline;
-}
-
-
-// Navigation item when nav is open
-.navigation-list.open {
-  .transform(@x:0, @y:0);
-
-  .navigation-item {
-        .transform(@x:0, @y:0);
-        display: block;
-        opacity: 1;
-  }
 }
 
 
@@ -149,7 +142,7 @@
 }
 
 
-.navigation-list.open .navigation-item:hover .navigation-list--children {
+.extendednavigation.open .navigation-list .navigation-item:hover .navigation-list--children {
   height: auto;
   padding: 0;
   position: relative;

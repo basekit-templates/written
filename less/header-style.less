@@ -132,8 +132,7 @@
         display: none;
     }
 
-    .widget[data-widget-type="blogsearch"] + .header-search-icon,
-    .bk-tpl-hidden + .header-search-icon {
+    .widget[data-widget-type="blogsearch"] + .header-search-icon {
         display: block;
         position: absolute;
         top: 9px;
@@ -206,6 +205,10 @@
                 bottom: 21px; background: @color-swatch7; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);
             }
         }
+    }
+
+    .bk-tpl-hidden + .header-search-icon {
+        display: none;
     }
 
     @keyframes bar1 {

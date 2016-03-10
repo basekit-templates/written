@@ -80,7 +80,7 @@
         },
         "font5": {
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
-            "font-size": "18px",
+            "font-size": "16px",
             "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch5",
@@ -117,7 +117,7 @@
         },
         "font9": {
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
-            "font-size": "18px",
+            "font-size": "16px",
             "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch5",

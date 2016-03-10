@@ -10,6 +10,9 @@
 
 .feature {
     margin-bottom: 90px;
+    @media @mobile {
+        margin-bottom: 0;
+    }
     .background-image {
         background-repeat: no-repeat;
         -webkit-background-size: cover;
@@ -27,7 +30,7 @@
             background-attachment: scroll!important;
         }
         @media @mobile {
-            height: 200px;
+            height: 300px;
         }
         &:after {
             display: none;
@@ -52,7 +55,10 @@
         }
         @media @mobile {
             padding: 20px 0;
-            margin-top: 10px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 0;
+            background-color: hsla(hue(@color__feature-content--background), saturation(@color__feature-content--background), lightness(@color__feature-content--background), 0.9);
         }
     }
     .headline {

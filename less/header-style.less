@@ -56,14 +56,47 @@
         padding: 0;
         background-color: transparent;
         border: none;
+        max-width: 600px;
+        margin: 0 auto;
+        .form-body {
+            display: block;
+        }
         .legend {
             color: @color-swatch7;
         }
         .button {
+            margin-top: 20px;
             background-color: @color__primary;
+            .border-radius(3px);
         }
         .button:hover {
             background-color: lighten(@color__primary, 10%);
+        }
+        .input,
+        input[type="search"] {
+            -webkit-appearance: none;
+            padding: 10px 0;
+            border: none;
+            border-bottom: 2px solid lighten(@color-swatch4, 10%);
+            box-shadow: none;
+            background-color: transparent;
+            color: #ffffff;
+            font-size: 24px;
+        }
+        ::-webkit-input-placeholder {
+           color: transparent;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+           color: transparent;  
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+           color: transparent;  
+        }
+
+        :-ms-input-placeholder {  
+           color: transparent;  
         }
     }
 

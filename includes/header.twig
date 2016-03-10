@@ -2,7 +2,7 @@
 <header class="template-header">
     {{widget('extendednavigation', 'navigation', {"align":"left"})|raw}}
     <div class="brand">
-        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo-default.png')})|raw}}
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo-default.png'), "showTplWidget":"0"})|raw}}
         {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
     </div>
     {% if plugins.blog.live %}

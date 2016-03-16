@@ -52,7 +52,7 @@
             "font-weight": "400",
             "line-height": "46px",
             "color": "@color-swatch4",
-            "letter-spacing": "inherit"
+            "letter-spacing": "0px"
         },
         "font2": {
             "font-family": "\"Lora\", \"Georgia\", serif",
@@ -60,7 +60,7 @@
             "font-weight": "400",
             "line-height": "44px",
             "color": "@color-swatch4",
-            "letter-spacing": "inherit"
+            "letter-spacing": "0px"
         },
         "font3": {
             "font-family": "\"Lora\", \"Georgia\", serif",
@@ -68,15 +68,15 @@
             "font-weight": "400",
             "line-height": "36px",
             "color": "@color-swatch4",
-            "letter-spacing": "inherit"
+            "letter-spacing": "0px"
         },
         "font4": {
             "font-family": "\"Lora\", \"Georgia\", serif",
             "font-size": "20px",
             "font-weight": "400",
-            "line-height": "30px",
+            "line-height": "32px",
             "color": "@color-swatch4",
-            "letter-spacing": "inherit"
+            "letter-spacing": "0px"
         },
         "font5": {
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
@@ -84,26 +84,26 @@
             "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch5",
-            "letter-spacing": "inherit"
+            "letter-spacing": "0px"
         },
         "font6": {
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "26px",
             "font-weight": "300",
-            "line-height": "inherit",
+            "line-height": "36px",
             "color": "@color-swatch7",
             "color-hover": "@color-swatch2",
-            "letter-spacing": "inherit",
+            "letter-spacing": "0px",
             "background-color": "@color-swatch7",
             "background-color-hover": "@color-swatch7"
          },
         "font7": {
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "16px",
-            "font-weight": "inherit",
+            "font-weight": "400",
             "line-height": "26px",
             "color": "@color-swatch7",
-            "letter-spacing": "inherit",
+            "letter-spacing": "0px",
             "background-color": "@color-swatch4",
             "background-color-hover": "@color-swatch3"
         },
@@ -113,7 +113,7 @@
             "font-weight": "400",
             "line-height": "46px",
             "color": "@color-swatch4",
-            "letter-spacing": "inherit"
+            "letter-spacing": "0px"
         },
         "font9": {
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
@@ -121,7 +121,7 @@
             "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch5",
-            "letter-spacing": "inherit"
+            "letter-spacing": "0px"
         },
         "font10": {
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
@@ -129,7 +129,7 @@
             "font-weight": "700",
             "line-height": "34px",
             "color": "@color-swatch4",
-            "letter-spacing": "inherit"
+            "letter-spacing": "0px"
         }
     },
     "styles": {

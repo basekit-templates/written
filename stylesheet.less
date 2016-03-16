@@ -479,28 +479,27 @@ hr {
     .border-radius(3px);
     color: @color__h4--text;
     font-family: @font__h4--font-family;
-    font-size: @font__h4--font-size;
+    font-size: @font__p--font-size;
     font-weight: @font__h4--font-weight;
-    line-height: @font__h4--line-height;
+    line-height: @font__p--line-height;
     letter-spacing: @font__h4--letter-spacing;
     p {
         color: @color__h4--text;
         font-family: @font__h4--font-family;
-        font-size: @font__h4--font-size;
+        font-size: @font__p--font-size;
         font-weight: @font__h4--font-weight;
-        line-height: @font__h4--line-height;
+        line-height: @font__p--line-height;
         letter-spacing: @font__h4--letter-spacing;
     }
 }
 
 .content blockquote:before,
-.content blockquote:after,
-.post-body blockquote:before,
-.post-body blockquote:after {
+.post-body blockquote:before {
+    position: absolute;
     color: @color-swatch4;
     font-size: 40px;
-    top: 30px;
-    left: 35px;
+    // top: 50px;
+    // left: 55px;
 }
 
 .responsivecolumns {

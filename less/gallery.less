@@ -83,9 +83,12 @@
     }
     .caption-link:hover {
         text-decoration: none;
-        .image-title,
+        .image-title {
+            color: @color__gallery-title--text;
+            .transition(@duration:0.2s, @ease:ease-in-out);
+        }
         .image-description {
-            color: @color__primary;
+            color: @color__gallery-description--text;
             .transition(@duration:0.2s, @ease:ease-in-out);
         }
     }
@@ -135,6 +138,8 @@
     opacity: 1;
     .transition(@duration:0.2s, @ease:ease-in-out);
 }
+
+.gallery-item .caption-link:hover .image-title, .gallery-item .caption-link:hover .image-description
 
 // Gallery Images in Responsive Columns
 

@@ -237,7 +237,7 @@
         "gallery": {
             "color__gallery-caption--background": "hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(@color-swatch7), 0.8)",
             "color__gallery-title--text": "@font-swatch8-color",
-            "color__gallery-description--text": "@font-swatch9-color"
+            "color__gallery-description--text": "@font-swatch8-color"
         },
         "slideshow": {
             "color__slideshow--background": "transparent",

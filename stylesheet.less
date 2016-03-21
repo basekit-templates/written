@@ -437,8 +437,10 @@ hr {
 // Click to Call
 // -----------------------------
 
-.clicktocall {
-    .label {
+.clicktocall,
+.companyphone {
+    .label,
+    .phone-number {
         color: @color__p--text;
     }
     .phone-number-link:hover {
@@ -451,7 +453,7 @@ hr {
     @media only screen and (max-width: 737px) {
         .phone-number-link {
             min-height: 44px;
-            padding: 8px 20px;
+            padding: 10px 20px;
             text-align: center;
             .border-radius(3px);
             color: @color-swatch7;
@@ -463,12 +465,14 @@ hr {
                 text-decoration: none;
             }
         }
-        .label {
+        .label,
+        .phone-number {
             color: @color__button--text;
         }
     }
     @media @mobile {
         .phone-number-link {
+            display: inline-block;
             width: 100%;
         }
     }

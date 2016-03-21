@@ -11,6 +11,7 @@
         "br": ["blog", "fotografia", "design", "portfolio", "galeria", "imagens", "tecnologia", "criativo", "mídia"]
     },
     "images": [
+        "images/image-1.jpg",
         "images/feature-bg.jpg",
         "images/logo-default.png"
     ],

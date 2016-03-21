@@ -441,6 +441,13 @@ hr {
     .label {
         color: @color__p--text;
     }
+    .phone-number-link:hover {
+        text-decoration: none;
+        cursor: text;
+        .label {
+            text-decoration: none;
+        }
+    }
     @media only screen and (max-width: 737px) {
         .phone-number-link {
             min-height: 44px;
@@ -452,6 +459,8 @@ hr {
             &:hover {
                 background-color: @color__button--background--hover;
                 .transition(@duration:0.2s, @ease:ease-in-out);
+                cursor: pointer;
+                text-decoration: none;
             }
         }
         .label {

@@ -221,6 +221,90 @@
     }
 }
 
+.responsivecolumns .ecomproduct {
+    .product-article .product-image .image-link {
+            max-height: 250px;
+            height: 250px;
+            line-height: 250px;
+            transition: none !important;
+            -o-transform: none !important;
+            -moz-transform: none !important;
+            -ms-transform: none !important;
+            -webkit-transform: none !important;
+            transform: none !important;
+        &:hover {
+            -webkit-transition: none !important;
+            -moz-transition: none !important;
+            -o-transition: none !important;
+            -ms-transition: none !important;
+            cursor: default;
+        }
+    }
+
+    .product-images,
+    .product-content {
+        padding: 20px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .product-image {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+    .product-article .product-content {
+        width: 100%;
+        margin-left: 0;
+    }
+    .product-actions .form .button {
+        width: 100%;
+    }
+
+    .view-basket-wrap .button {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .product-actions .form legend {
+        padding: 20px 0 0;
+        margin-bottom: 0;
+    }
+    .product-header,
+    .product-body,
+    .product-actions,
+    .product-attributes,
+    .product-gallery {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .product-image {
+        position: relative;
+    }
+    .product-article .product-content {
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 1;
+        margin: 0;
+    }
+    .product-article .product-images {
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 0;
+        padding: 20px 20px 0;
+    }
+    .product-gallery {
+        margin-top: 10px;
+    }
+    .product-gallery .gallery-item {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .image--thumb {
+        max-height: 60px;
+    }
+
+}
+
 
 
 // --------------------------------------
@@ -497,25 +581,19 @@
 
 // Products list in Responsive Columns
 
-// Two Columns
-.columns-two-left,
-.columns-two-right {
-    .product-item,
-    .ecomfeaturedproducts .products-2 .product-item,
-    .ecomfeaturedproducts .products-4 .product-item,
-    .columns-three-left .product-item,
-    .columns-three-middle .product-item,
-    .columns-three-right .product-item,
-    .columns-four-first .product-item,
-    .columns-four-second .product-item,
-    .columns-four-third .product-item,
-    .columns-four-fourth .product-item {
-        position: relative;
-        width: 48%;
-        margin-bottom: 20px;
-        // Display 100% at mobile
-        @media @mobile {
-            width: 100%;
+.responsivecolumns {
+    .ecomproductslist,
+    .ecomfeaturedproducts {
+        .product-item,
+        .products-2 .product-item,
+        .products-4 .product-item {
+            position: relative;
+            width: 48%;
+            margin-bottom: 20px;
+            // Display 100% at mobile
+            @media @mobile {
+                width: 100%;
+            }
         }
     }
     .product-item-image,
@@ -529,27 +607,15 @@
     }
 }
 
-// Three Columns
-.columns-three-left,
-.columns-three-middle,
-.columns-three-right,
-// Four Columns
-.columns-four-first,
-.columns-four-second,
-.columns-four-third,
-.columns-four-fourth {
-    // Display 100%
-    .product-item,
-    .ecomfeaturedproducts .products-2 .product-item,
-    .ecomfeaturedproducts .products-4 .product-item,
-    .columns-three-left .product-item,
-    .columns-three-middle .product-item,
-    .columns-three-right .product-item,
-    .columns-four-first .product-item,
-    .columns-four-second .product-item,
-    .columns-four-third .product-item,
-    .columns-four-fourth .product-item  {
-        width: 100%;
+.responsivecolumns {
+    .ecomproductslist,
+    .ecomfeaturedproducts {
+        // Display 100%
+        .product-item,
+        .ecomfeaturedproducts .products-2 .product-item,
+        .ecomfeaturedproducts .products-4 .product-item {
+            width: 100%;
+        }
     }
 }
 

@@ -1,0 +1,24 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="default-page">
+
+    {% include "includes/header.twig" %}
+
+        <!-- Container -->
+        <div class="container">
+
+                <!-- Main Widget Zone -->
+                {{widget('ecomfeaturedproducts', 'featuredproducts', {})|raw}}
+                {{widget('ecomcategories', 'productcategories', {})|raw}}
+
+        </div>
+        <!-- End Container -->
+
+
+    {% include "includes/footer.twig" %}
+
+</div>
+
+{% endblock %}

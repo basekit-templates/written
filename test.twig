@@ -10,7 +10,17 @@
         <div class="container">
 
                 <!-- Main Widget Zone -->
-                {{widget('facebooklike', 'likebutton', { showFaces: 'true', action: 'like', colorscheme: 'light', layout: 'standard', height: '80', font: 'arial', locale: 'en_US', thisUrl: 'www.mysite.com' })|raw}
+                {{widget('facebooklike', 'likebutton', {
+  text: 'FaceBook Like',
+  showFaces: 'true',
+  action: 'like',
+  colorscheme: 'light',
+  layout: 'standard',
+  height: '80',
+  font: 'arial',
+  locale: 'en_US',
+  thisUrl: 'www.mysite.com'
+})|raw}}
 
         </div>
         <!-- End Container -->

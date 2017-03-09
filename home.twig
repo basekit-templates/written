@@ -37,7 +37,7 @@
 {% block scripts %}
 
     <!-- Feature -->
-    <script>
+    <script nonce="{{ numberUsedOnce }}">
 
         if ($(".feature-container").length) {
             var featureHeight = $(".feature-container").height();

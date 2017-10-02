@@ -128,7 +128,7 @@
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "24px",
             "font-weight": "700",
-            "line-height": "34px",
+            "line-height": "26px",
             "color": "@color-swatch4",
             "letter-spacing": "0px"
         }

@@ -1,0 +1,69 @@
+
+// -----------------------------
+// Migration Styles
+// -----------------------------
+
+
+#migrated-site {
+
+
+    // Stylesheet overrides
+    // -----------------------------
+
+
+    .container {
+        padding-top: 0;
+    }
+
+
+    .container #page-zones__main > [data-name="row"] {
+        margin: 0 auto;
+        width: 100%;
+
+
+        &.height--no-padding .row__container > .widget {
+            margin-top: 0;
+        }
+
+        .widget {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+        }
+    }
+
+
+
+
+    // Migration styles
+    // -----------------------------
+
+
+    .empty-zone,
+    #page-zones__main:empty,
+    #page-zones__main > .widget:not([data-name="row"]),
+    .row:not(.row--width-no-padding) .row__container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+
+        @media only screen and (min-width: 1140px) {
+            width: 960px;
+        }
+    }
+
+
+    #page-zones__main > .widget:not([data-name="row"]):first-child {
+        margin-top: 40px;
+
+        @media @mobile {
+            margin-top: 20px;
+        }
+    }
+
+
+    #page-zones__main > [data-name="row"] + .widget:not([data-name="row"]),
+    #page-zones__main > .widget:not([data-name="row"]) + [data-name="row"]:not(:last-child) {
+        margin-top: 10px;
+    }
+}

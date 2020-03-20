@@ -4,6 +4,7 @@
     "screenshot": "written-screenshot.jpg",
     "widgetVersion":2,
     "pageTypes": ["home"],
+    "versionTenCompatible": 1,
     "templateType":"standard",
     "tags": {
         "en": ["blog", "photography", "design", "portfolio", "gallery", "images", "technology", "creative", "media"],

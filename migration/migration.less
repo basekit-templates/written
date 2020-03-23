@@ -11,8 +11,28 @@
     // -----------------------------
 
 
+    &.is-move-mode .template-header,
+    &.row-editing .template-header {
+        display: none;
+    }
+
+
     .container {
         padding-top: 0;
+    }
+
+
+    .template-homepage #page-zones__main [data-name="row"]:first-child .row:before {
+
+        @media only screen and (min-width: 480px) {
+            background-color: inherit;
+            content: "";
+            display: block;
+            height: 90px;
+            position: absolute;
+            top: -90px;
+            width: 100%;
+        }
     }
 
 
